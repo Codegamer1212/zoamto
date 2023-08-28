@@ -1,0 +1,394 @@
+@font-face {
+  font-family: Okra;
+  font-display: swap;
+  src: url(https://b.zmtcdn.com/web_assets/0256637bc22e4c9e069ad868c196d29f1597997099.woff2)
+      format("woff2"),
+    url(https://b.zmtcdn.com/web_assets/0a2cb1a22221afd4a5c4f59bde89afda1597921603.ttf)
+      format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: okra;
+}
+
+header {
+  background-image: url(images/main_background.jpg);
+  background-size: cover;
+}
+.navbar {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ullist {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 auto;
+}
+.leftside {
+  width: 21%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.rightside {
+  width: 50%;
+}
+.leftside h2 {
+  font-family: okra;
+  font-size: 17px;
+}
+.ullist a {
+  text-decoration: none;
+  color: white;
+  font-family: okra;
+  font-size: 18px;
+  font-weight: 500;
+}
+.serchbar img {
+  
+  height: 135px;
+  width: 379px;
+}
+.serchbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.serchbar .serchp {
+  color: white;
+  font-size: 36px;
+  font-family: okra;
+  width: 43%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 43.2px;
+  margin: 0px;
+  padding-bottom: 180px;
+}
+.container img {
+  height: 60px;
+  width: 54px;
+  border-radius: 22px;
+  margin: 0px 9px;
+}
+.container .con_p {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+.container .con_span {
+  font-weight: bold;
+  font-size: 38px;
+}
+.con_caption {
+  font-size: 20px;
+  width: 66%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 32px;
+  padding-bottom: 80px;
+}
+.firstloc {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 320px;
+  padding: 16px 3px;
+  border-radius: 10px;
+  position: relative;
+  margin: 17px 30px;
+}
+.firstloc i {
+  position: absolute;
+  right: 19px;
+  font-size: 15px;
+  color: rgb(163, 159, 152);
+  top: 23px;
+}
+.firstloc p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 2px 14px;
+  font-weight: 400;
+}
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+}
+.logo {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo .zomatoing {
+  filter: grayscale(100%);
+  height: 95px;
+}
+.logo .indiaflag{
+        height: 24px;
+        width: 24px;
+        padding: 0px 11px;
+    
+}
+
+/* footer section */
+.fotter_down {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.menus i {
+  font-size: 22px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.menus img {
+  width: 150px;
+  padding-bottom: 20px;
+}
+.imageds {
+  display: flex;
+  flex-direction: column;
+}
+.icons {
+  text-align: center;
+}
+.menus h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.menus h3 {
+  font-size: 16px;
+}
+.indiad{
+        display: flex;
+        width: 100px;
+        border: 1px solid rgb(187, 181, 181);
+        border-radius: 8px;
+        padding: 7px 11px;
+        height: 25px;
+    
+}
+.english{
+  height: 25px;
+    width: 100px;
+    border: 1px solid rgb(187, 181, 181);
+    border-radius: 8px;
+    padding: 7px 11px;
+}
+.indiad i{
+  margin-top: 6px;
+    padding-left: 14px;
+}
+.english i {
+    padding-left: 22px;
+    margin-top: 4px;
+}
+.flaglan{
+  display: flex;
+  justify-content: space-between;
+  width: 27%;
+}
+.fotter_up{
+  padding-top: 100px;
+}
+
+/* modal design  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 420px;
+  border-radius: 5px;
+  opacity: 95%;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.form-group input[type="submit"] {
+  background-color:rgb(109, 109, 109);
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: rgb(248, 73, 73);
+}
+.modal_p{
+  font-size: 13px;
+padding-top: 13px;
+width: 83%;
+}
+.form-checkbox{
+  display: flex;
+}
+.termcon{
+  color: red;
+}
+
+/* login modal  */
+.Loginform {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.error{
+  font-size: 13px;
+color: red;
+}
+
+.form-group input[type="submit"] {
+  background-color:rgb(109, 109, 109);
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: rgb(248, 73, 73);
+}
+.modal_p{
+  font-size: 13px;
+padding-top: 13px;
+width: 83%;
+}
+.form-checkbox{
+  display: flex;
+}
+.termcon{
+  color: red;
+}
+#role{
+  width: 31%;
+background: transparent;
+border: none;
+border: 1px solid  #ccc;
+}
+.sucessmessage {
+  color: chartreuse;
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  left: 37%;
+}
+#sucessfullregister {
+    position: absolute;
+    top: 10%;
+    font-size: 21px;
+    color: cornsilk;
+    font-weight: bold;
+}

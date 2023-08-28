@@ -1,0 +1,187 @@
+/* Global styles */
+body {
+    font-family: "Signika Negative", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #8c0b0b;
+  }
+  
+  /* Header styles */
+  .addnew {
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .Addnewuser {
+    background-color: #8c0b0b;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 32%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  /* Form styles inside the modal */
+ 
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="url"],
+  textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+      background-color: #8c0b0b;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 47%;
+      margin-left: 22%;
+  }
+  /* Table styles */
+  .tablecontainer2 {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Pagination styles */
+  .pag2 {
+   
+    margin: 20px 0;
+  }
+  
+  .pag2 a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .pag2 a.active {
+    background-color: #8c0b0b;
+    color: #fff;
+  }
+  
+  /* Styling the modal show class */
+  .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #availability {
+    width: 30%;
+  }
+  
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  
+  .update-button {
+    background-color: #0d84a1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  #addItemForm{
+    display: grid;
+grid-gap: 4px;
+
+  }
+  /* Additional styles for better responsiveness */
+  @media screen and (max-width: 768px) {
+    .tablecontainer2 {
+      overflow-x: auto;
+      width: 100%;
+      display: block;
+    }
+  
+    table {
+      width: 100%;
+    }
+  }
+  
